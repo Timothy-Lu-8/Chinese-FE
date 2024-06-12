@@ -30,6 +30,7 @@ const Flashcards = () => {
 
                 response = await fetch(`https://chinese-odq1vh5nh-timothy-lus-projects.vercel.app/api/characters/${lessonNum}/${courseNum}`, {
                     method: 'GET',
+                    mode: 'cors',
                     headers: {
                         Accept: 'application/json',
                     },
@@ -40,6 +41,7 @@ const Flashcards = () => {
                 displaying = "Chinese " + courseNum + " All"
                 response = await fetch(`https://chinese-odq1vh5nh-timothy-lus-projects.vercel.app/api/characters/${courseNum}`, {
                     method: 'GET',
+                    mode: 'cors',
                     headers: {
                         Accept: 'application/json',
                     },
