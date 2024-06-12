@@ -28,7 +28,7 @@ const Flashcards = () => {
             if (lessonNum != "0"){
                 setDisplay(true)
 
-                response = await fetch(`https://chinese-odq1vh5nh-timothy-lus-projects.vercel.app/api/characters/${lessonNum}/${courseNum}`, {
+                response = await fetch(`https://chinese-be.vercel.app/api/characters/${lessonNum}/${courseNum}`, {
                     method: 'GET',
                     mode: 'cors',
                     headers: {
@@ -39,7 +39,7 @@ const Flashcards = () => {
 
             else {
                 displaying = "Chinese " + courseNum + " All"
-                response = await fetch(`https://chinese-odq1vh5nh-timothy-lus-projects.vercel.app/api/characters/${courseNum}`, {
+                response = await fetch(`https://chinese-be.vercel.app/api/characters/${courseNum}`, {
                     method: 'GET',
                     mode: 'cors',
                     headers: {
