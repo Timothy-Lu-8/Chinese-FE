@@ -11,6 +11,8 @@ const Flashcards = () => {
     const courseNum = location.state.courseNum
     const lessonNum = location.state.lessonNum
 
+    console.log(lessonNum)
+
     const toQuizPage = () => {
         navigate("/quiz", {state:{characters}})
     }
