@@ -7,7 +7,7 @@ const Chin1 = () => {
     const navigate = useNavigate()
     const toPage = () => {
         console.log(lessonNumber)
-        navigate('/flashcards', {state:{courseNum:"1501", lessonNum:lessonNumber}})
+        navigate('https://chinese-odq1vh5nh-timothy-lus-projects.vercel.app/flashcards', {state:{courseNum:"1501", lessonNum:lessonNumber}})
     }
 
     const lessonChange = (event) => {
